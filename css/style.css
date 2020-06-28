@@ -1,0 +1,70 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: #00ffdd;
+        }
+        
+        .container {
+            height: auto;
+            width: auto;
+            border: 2px solid #00ffdd;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 100px;
+            border-radius: 15px 15px 0px 0px;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000000;
+        }
+        
+        .hesap_makinesi {
+            position: relative;
+            display: grid;
+        }
+        
+        .hesap_makinesi .value {
+            grid-column: span 4;
+            border-radius: 15px 15px 0px 0px;
+            width: 100%;
+            height: 300px;
+            text-align: right;
+            border: none;
+            padding: 10px;
+            font-size: 24px;
+            background: #000000;
+        }
+        
+        .hesap_makinesi span {
+            display: grid;
+            width: 100px;
+            height: 100px;
+            background-color: #16002a;
+            place-items: center;
+            border: 1px solid #00ffdd;
+        }
+        
+        .hesap_makinesi span:active {
+            background: rgb(107, 0, 139);
+            color: #000000;
+            font-size: 28px;
+        }
+        
+        .hesap_makinesi span.clear {
+            grid-column: span 2;
+            width: 200px;
+        }
+        
+        .hesap_makinesi span.topla {
+            grid-row: span 2;
+            height: 200px;
+        }
+        
+        .num {
+            cursor: pointer;
+        }
